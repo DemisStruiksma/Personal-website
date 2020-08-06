@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: RobotRegular;
+  src: url(../Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(../Roboto/Roboto-Bold.ttf);
+}
+
+
+main {
+  font-family: RobotRegular;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.profile {
+  /* position: fixed; */
+  /* background-color: #F8F8FF; */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.portfolio {
+  flex: 1 1 0%;
+  margin-left: 2.5rem;
+  max-width:700px;
+  /* border: 1px solid black; */
+}
+
+.job {
+  border-bottom: 1px solid black;
+}
+
+.job-title {
+  font-family: RobotoBold;
+}
+
+.job-period {
+  font-size: 0.85rem;
+}
+
+@media screen and (max-width:767px) {
+  .profile {
+    margin: 0 auto;
+  }
+
+	.portfolio {
+    position: absolute;
+    margin-top: 10rem;
+  }
+}
