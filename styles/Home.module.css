@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 200px;
 }
 
 .main {
@@ -15,6 +16,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 /* .dot {
@@ -38,7 +40,11 @@
 }
 
 .headerImage {
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+  0 2px 2px rgba(0,0,0,0.12), 
+  0 4px 4px rgba(0,0,0,0.12), 
+  0 8px 8px rgba(0,0,0,0.12),
+  0 16px 16px rgba(0,0,0,0.12);
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -67,7 +73,12 @@
   max-width: 660px;
   height: 200px;
   display: flex;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
 }
 
 .card hr {
@@ -98,6 +109,8 @@
   height: 100%;
   object-fit: contain;
   align-self: flex-start;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .footer {
@@ -107,6 +120,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #EAEAEA;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer img {
@@ -122,15 +138,14 @@
 @media (max-width: 600px) {
   .main {
    display: block;
-   padding: 50px;
+   /* margin-left: 50%;
+   margin-right: 50%; */
   }
 
   .header {
     display: block;
-  }
-
-  .headerImage {
-    margin: 0 auto;
+    margin-left: 50%;
+    margin-right: 50%;
   }
 
   .headerDescription {
@@ -139,6 +154,11 @@
 
   .card {
     display: inline;
+  }
+
+  .cardImage {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
 
   .cardDescription {
