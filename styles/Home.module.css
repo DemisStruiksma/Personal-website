@@ -159,12 +159,13 @@
   .cardImage {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
+    width: 300px;
   }
 
   .cardDescription {
     padding-left: 0rem;
     padding-right: 0rem;
-    max-width: 200px;
+    max-width: 300px;
     margin-bottom: 3rem;
   }
 }
