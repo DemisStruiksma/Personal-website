@@ -1,11 +1,19 @@
 import styles from '../styles/Home.module.css'
+import Head from 'next/head'
 import Card from '../components/card'
 
-const name = "Demis";
+const name = "Demis Struiksma";
 
 export default function Home() {
   return (
       <main className={styles.main}>
+        <Head>
+        <title>Demis Struiksma</title>
+        <meta
+          name="description"
+          content="Demis Struiksma is a front-end web developer from Amsterdam."
+        />
+        </Head>
         <section className={styles.container}>
         <header className={styles.header}>
         <img
@@ -16,7 +24,7 @@ export default function Home() {
         <div className={styles.headerDescription}>
           <h1>{name}</h1>
           {/* <div className="dot"></div> */}
-          <p>My name is {name}. I'm a web developer from Amsterdam. <br></br>React out to me @ contact@demis.io</p>
+          <p>My name is {name}. I'm a web developer from Amsterdam. <br></br>React out to me @ <a href="mailto:contact@demis.io">contact@demis.io</a></p>
         </div> 
       </header>
 
