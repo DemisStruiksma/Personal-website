@@ -1,12 +1,12 @@
 import styles from '../styles/Home.module.css'
-import Card from '../components/Card'
+import Card from '../components/card'
 
 const name = "Demis";
 
 export default function Home() {
   return (
       <main className={styles.main}>
-        <container className={styles.container}>
+        <section className={styles.container}>
         <header className={styles.header}>
         <img
           src="./images/profile.jpg"
@@ -67,7 +67,7 @@ export default function Home() {
         duration="NOV 2017" 
         name="WeTransfer" description="I did a short internship at the design studio of WeTransfer. I have worked on a WeTransfer wallpaper and I have interviewed several WeTransfer employees about their role and experience at WeTransfer (which I then processed in a blog). I directly reported to the Creative Director." />
       </div>  
-      </container>
+      </section>
       <footer className={styles.footer}>
         © Demis Struiksma
       </footer>
