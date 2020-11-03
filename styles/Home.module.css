@@ -107,6 +107,23 @@
   border-radius: 50%;
 }
 
+.header .linkedin {
+  max-width: 40px;
+  max-height: 40px;
+  position: absolute;
+  margin-top: 10rem;
+  margin-left: -8rem;
+}
+
+.header .github {
+  max-width: 36px;
+  max-height: 36px;
+  position: absolute;
+  margin-top: 10.2rem;
+  margin-left: -5rem;
+}
+
+
 .headerDescription {
   padding-left: 2rem;
 }
@@ -204,6 +221,18 @@
     margin-left: 50%;
     margin-right: 50%;
     width: 300px;
+  }
+
+  .header .linkedin {
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 2rem;
+  }
+  
+  .header .github {
+    position: absolute;
+    margin-top: 3.1rem;
+    margin-left: 6rem;
   }
 
   .headerDescription {

@@ -17,11 +17,29 @@ export default function Home() {
         </Head>
         <section className={styles.container}>
         <header className={styles.header}>
+          <img
+            src="./images/profile.jpg"
+            alt="profile-picture"
+            className={styles.headerImage}
+          />
+        
+        <a href="https://github.com/DemisStruiksma">
         <img
-          src="./images/profile.jpg"
-          alt="profile-picture"
-          className={styles.headerImage}
+          src="./images/github.png"
+          alt="github"
+          className={styles.github}
         />
+        </a>
+
+        <a href="https://linkedin.com/in/demisstruiksma">
+          <img
+            src="./images/linkedin.png"
+            alt="linkedin"
+            className={styles.linkedin}
+          />
+        </a>
+        
+
         <div className={styles.headerDescription}>
           <h1>{name}</h1>
           {/* <div className="dot"></div> */}
