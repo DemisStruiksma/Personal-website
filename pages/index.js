@@ -5,8 +5,9 @@ import Card from '../components/card'
 const name = "Demis Struiksma";
 
 export default function Home() {
-  return (
+  return ( 
       <main className={styles.main}>
+        <div className={styles.bar}>This website is under construction 🚧</div> 
         <Head>
         <title>Demis Struiksma</title>
         <meta
@@ -25,6 +26,13 @@ export default function Home() {
           <h1>{name}</h1>
           {/* <div className="dot"></div> */}
           <p>My name is {name}. I'm a front-end web developer from Amsterdam. You can reach out to me @ <a href="mailto:contact@demis.io">contact@demis.io</a></p>
+          <div className={styles.available}>
+          <p>Available for hire</p>
+          <div className={styles.circle}></div>
+          <div className={styles.circleNormal}></div>
+          </div>
+          
+          
         </div> 
       </header>
 
