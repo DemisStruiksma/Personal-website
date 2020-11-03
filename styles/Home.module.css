@@ -37,6 +37,7 @@
 
 .header {
   display: flex;
+  max-width: 660px;
 }
 
 .header a {

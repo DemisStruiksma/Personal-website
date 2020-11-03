@@ -24,7 +24,7 @@ export default function Home() {
         <div className={styles.headerDescription}>
           <h1>{name}</h1>
           {/* <div className="dot"></div> */}
-          <p>My name is {name}. I'm a web developer from Amsterdam. <br></br>React out to me @ <a href="mailto:contact@demis.io">contact@demis.io</a></p>
+          <p>My name is {name}. I'm a front-end web developer from Amsterdam. You can reach out to me @ <a href="mailto:contact@demis.io">contact@demis.io</a></p>
         </div> 
       </header>
 
