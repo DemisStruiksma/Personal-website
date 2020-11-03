@@ -39,6 +39,14 @@
   display: flex;
 }
 
+.header a {
+  color: blue;
+}
+
+.header a:hover {
+  opacity: 0.75;
+}
+
 .headerImage {
   box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
   0 2px 2px rgba(0,0,0,0.12), 
@@ -146,6 +154,7 @@
     display: block;
     margin-left: 50%;
     margin-right: 50%;
+    width: 300px;
   }
 
   .headerDescription {
