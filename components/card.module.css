@@ -1,0 +1,63 @@
+.card {
+    margin-bottom: 5rem;
+    max-width: 660px;
+    height: 200px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.12), 
+                0 8px 8px rgba(0,0,0,0.12),
+                0 16px 16px rgba(0,0,0,0.12);
+  }
+  
+  .card hr {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  
+  .card h2 {
+    font-weight: 500;
+  }
+  
+  .card .cardJob, .cardDuration {
+    font-weight: 300;
+  }
+  
+  .cardDescription {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow: auto;
+  }
+  
+  .cardDescription p {
+    font-size: 1.2rem;
+  }
+  
+  .cardImage {
+    max-width: auto;
+    height: 100%;
+    object-fit: contain;
+    align-self: flex-start;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+@media (max-width: 600px) {
+    .card {
+    display: inline;
+    }
+
+    .cardImage {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 300px;
+    }
+
+    .cardDescription {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    max-width: 300px;
+    margin-bottom: 3rem;
+    }
+}
